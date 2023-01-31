@@ -1,2 +1,2 @@
-# Control-de-Versions
-Pràctica 2 - Control de Versions
+# Calculadora
+Exercici per a la practica1 UF2
