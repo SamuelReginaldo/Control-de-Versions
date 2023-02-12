@@ -40,6 +40,7 @@ public class Practica1 {
                         + "\n % = residu");
                 System.out.printf(">");
                 operacion = sc.nextLine();
+                
                 if (operacion.equals("+") || operacion.equals("-") || operacion.equals("x")
                         || operacion.equals("X") || operacion.equals("/") || operacion.equals("%")
                         || operacion.equals("*")) {
