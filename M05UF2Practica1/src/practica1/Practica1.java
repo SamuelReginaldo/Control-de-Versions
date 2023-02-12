@@ -7,6 +7,7 @@ package practica1;
 
 import java.util.Scanner;
 
+
 /**
  *
  * @author esther
@@ -40,15 +41,7 @@ public class Practica1 {
                         + "\n % = residu");
                 System.out.printf(">");
                 operacion = sc.nextLine();
-                
-                if (operacion.equals("+") || operacion.equals("-") || operacion.equals("x")
-                        || operacion.equals("X") || operacion.equals("/") || operacion.equals("%")
-                        || operacion.equals("*")) {
-                    comprobar = true;
-                } else {
-                    comprobar = false;
-                }
-            } while (comprobar != true);
+            } while (comprobar != Utilities.comprobarOperacio(operacion));
 
             String numero2;
             do {
@@ -58,7 +51,7 @@ public class Practica1 {
             } while (!numero2.matches("[+-]?[\\d]*[.]?[\\d]+"));
             double nume2 = Double.parseDouble(numero2);
             double n2 = new Double(numero2);
-
+            
             do {
                 comprobar = true;
                 switch (operacion) {
